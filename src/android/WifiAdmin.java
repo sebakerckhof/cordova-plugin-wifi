@@ -61,6 +61,7 @@ public class WifiAdmin extends CordovaPlugin {
     	
 		Context context = cordova.getActivity().getApplicationContext();
 		WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+		wifiManager.startScan();
 		WifiInfo wifiInfo = wifiManager.getConnectionInfo();
 
 		JSONObject obj = new JSONObject();
