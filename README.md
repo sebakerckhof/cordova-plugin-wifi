@@ -29,6 +29,7 @@ cordova platform add android
 git clone https://github.com/schollz/cordova-plugin-wifi.git
 cordova plugin add ./cordova-plugin-wifi
 cordova plugin add cordova-plugin-whitelist
+cordova plugin add https://github.com/schollz/cordova-plugin-background-mode.git
 rsync -avrP ../hello/plugins/cordova-plugin-wifi/test/* platforms/android/assets/www/
 ./platforms/android/cordova/build
 cp /home/phi/Downloads/cord/find/platforms/android/build/outputs/apk/android-debug.apk ~/Dropbox/android-debug.apk
